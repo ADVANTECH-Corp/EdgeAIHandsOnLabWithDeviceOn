@@ -1,0 +1,13 @@
+{
+  "DomainType": "Classification",
+  "Platform": "TensorFlow",
+  "Flavor": "TensorFlowSavedModel",
+  "ExporterVersion": "2.0",
+  "ExportedDate": "2023-03-15T05:45:05.193141Z",
+  "IterationId": "d8d4e931-8377-4407-a594-81bf38c185c0",
+  "ModelFileName": "saved_model.pb",
+  "LabelFileName": "labels.txt",
+  "MetadataPropsFileName": "metadata_properties.json",
+  "ModelFileSHA1": "f07805a6abe135c58317d2c595e8618b70fecf50",
+  "SchemaVersion": "1.0"
+}

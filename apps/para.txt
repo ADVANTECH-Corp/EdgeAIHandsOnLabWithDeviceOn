@@ -1,0 +1,26 @@
+{
+  "Env": [
+    "DISPLAY=:0.0",
+    "QT_X11_NO_MITSHM=1"
+  ],
+  "Image": "deviceonadf.azurecr.io/handsonlab/jetson-tx2:latest",
+  "Volumes":{
+    "/tmp/.X11-unix":{},
+    "/home/a":{}
+  },
+  "WorkingDir": "/ws",
+  "Cmd": ["date"],
+  "HostConfig": {
+    "Binds":[
+      "/tmp/.X11-unix/:/tmp/.X11-unix",
+      "/home/a:/ws"
+    ],
+    "Devices":[
+        {
+            "PathOnHost": "/dev/video0",
+            "PathInContainer": "/dev/video0",
+            "CgroupPermissions": "rwm"
+        }
+    ]
+  }
+}
