@@ -4,6 +4,12 @@
   <img width="600" src="pic\flow.png">
 </p>
 
+# 目的
+### 將開發好的AI應用程式，快速佈署到多台edge端，並輕鬆地監控各硬體狀態
+<p align="center">
+  <img width="600" src="pic\deviceon.png">
+</p>
+
 # 0. 容器建立與佈署
 * 透過DeviceOn介面將ACR中的映像檔佈署到edge端設備，並建立與啟動容器
 <p align="center">
