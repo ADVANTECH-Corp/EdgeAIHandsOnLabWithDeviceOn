@@ -1,19 +1,18 @@
 {
   "Env": [
-    "DISPLAY=:0.0",
-    "QT_X11_NO_MITSHM=1"
+    "DISPLAY=:0",
+    "QT_X11_NO_MITSHM=1",
+    "LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1"
   ],
-  "Image": "deviceonadf.azurecr.io/handsonlab/jetson-tx2:latest",
   "Volumes":{
-    "/tmp/.X11-unix":{},
-    "/home/a":{}
+    "/tmp/.X11-unix":{}
   },
-  "WorkingDir": "/ws",
-  "Cmd": ["date"],
+  "WorkingDir": "/app",
+  "Cmd": ["python3", "demo.py"],
   "HostConfig": {
+    "AutoRemove":true,
     "Binds":[
-      "/tmp/.X11-unix/:/tmp/.X11-unix",
-      "/home/a:/ws"
+      "/tmp/.X11-unix/:/tmp/.X11-unix"
     ],
     "Devices":[
         {
@@ -21,6 +20,8 @@
             "PathInContainer": "/dev/video0",
             "CgroupPermissions": "rwm"
         }
-    ]
+    ],
+    "Runtime":"nvidia",
+    "NetworkMode":"host"
   }
 }
