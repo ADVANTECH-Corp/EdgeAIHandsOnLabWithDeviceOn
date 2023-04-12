@@ -228,3 +228,46 @@ ACR可以用來儲存您的映像檔，詳見[官方網站](https://azure.micros
   ```
   $ sudo docker tag tf2.3-gpu-arm64:v0.0 deviceonadf.azurecr.io/tf2.3-gpu-arm64:v0.0
   ```
+
+<p align="center">
+  <img width="600" src="pic\螢幕擷取畫面 2023-03-28 091751.png">
+</p>
+
+* 上傳已加前綴的映像檔
+
+```
+$ sudo docker push deviceonadf.azurecr.io/tf2.3-gpu-arm64:v0.0
+```
+
+<p align="center">
+  <img width="600" src="pic\螢幕擷取畫面 2023-03-28 101605.png">
+</p>
+
+# 4. DeviceOn與ACR的連結設定
+
+<p align="center">
+  <img width="600" src="pic\f4.png">
+</p>
+
+DeviceOn提供一個便於將ACR中的映像檔佈署至edge端的操作介面
+
+> 操作環境 : 本機的DeviceOn portal
+
+## 註冊DeviceOn帳號
+
+> 細節可以參考[ADVANTECH-Corp/DeviceOn-x86_Edge_AI_Solution](https://github.com/ADVANTECH-Corp/DeviceOn-x86_Edge_AI_Solution/blob/main/DeployAIToAnyEdge.md)
+
+<p align="center">
+  <img width="600" src="pic\螢幕擷取畫面 2023-03-28 093722.png">
+</p>
+
+* 新增Registry
+
+<p align="center">
+  <img width="600" src="pic\螢幕擷取畫面 2023-04-10 095446.png">
+</p>
+
+<p align="center">
+  <img width="600" src="pic\螢幕擷取畫面 2023-03-28 103359.png">
+</p>
+
