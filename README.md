@@ -264,10 +264,47 @@ DeviceOn提供一個便於將ACR中的映像檔佈署至edge端的操作介面
 * 新增Registry
 
 <p align="center">
-  <img width="600" src="pic\螢幕擷取畫面 2023-04-10 095446.png">
+  <img width="450" src="pic\螢幕擷取畫面 2023-04-10 095446.png">
+</p>
+
+# 5. Edge端安裝DeviceOn
+
+<p align="center">
+  <img width="450" src="pic\f5.png">
+</p>
+
+> 操作環境 : Edge端
+
+## 安裝DeviceOn執行檔
+
+* 根據edg端的系統選擇安裝的執行檔
+
+* 執行下列語法進行安裝
+
+  ```
+  $ chmod 0755 wise-agent-Ubuntu_18.04-jetson-1.4.45.0.run
+  $ sudo ./wise-agent-Ubuntu_18.04-jetson-1.4.45.0.run
+  ```
+  
+<p align="center">
+  <img width="450" src="pic\螢幕擷取畫面 2023-04-10 093250.png">
+</p>
+
+移動到`/usr/local/AgentService`，並執行
+
+```
+$ sudo ./setup.sh
+```
+
+> `Credential URL`跟`IoT Key`可從DeviceOn網頁取得
+
+<p align="center">
+  <img width="450" src="pic\螢幕擷取畫面 2023-04-10 093323.png">
 </p>
 
 <p align="center">
-  <img width="600" src="pic\螢幕擷取畫面 2023-03-28 103359.png">
+  <img width="450" src="pic\螢幕擷取畫面 2023-04-10 093354.png">
 </p>
+
+
 
