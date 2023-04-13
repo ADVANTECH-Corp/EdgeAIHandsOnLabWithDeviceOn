@@ -196,6 +196,7 @@ $ newgrp docker
 * 在新的終端介面執行下列語法，將其打包成Docker映象檔
 
   ```
+  $ sudo docker ps -l
   $ sudo docker commit <CONTAINER ID> tf2.3-gpu-arm64:v0.0
   ```
 
