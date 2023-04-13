@@ -224,7 +224,7 @@ ACR可以用來儲存您的映像檔，詳見[官方網站](https://azure.micros
 
 * 透過Docker登入ACR，並輸入帳密
   ```
-  $ sudo docker login <URL>
+  $ sudo docker login deviceonadf.azurecr.io
   ```
   
 <p align="center">
