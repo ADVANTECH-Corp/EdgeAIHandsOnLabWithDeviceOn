@@ -1,9 +1,11 @@
 FROM python:3.7.16-slim
 
-WORKDIR /ws 
+WORKDIR /app 
 
-ADD . /ws
+ADD . /app
 
-RUN pip3 install -r requirements.txt
+RUN python -m pip install numpy
 
-CMD ["sh", "setup_opencv.sh"]
+RUN python -m pip install opencv-python-headless
+
+RUN python -m pip install Pillow
